@@ -31,7 +31,6 @@
 </head>
 <body>
     <div id="center">
-    <img src="C:\Users\lenovo\Desktop\前端\资料\day01-HTML-CSS\资料\3. 图片、音频、视频\img\news_logo.png">   <a href="https://ehall.xcu.edu.cn/new/index.html" target="_self"> 新浪政务</a>  > 正文
     <h1>焦点访谈：中国底气 新思想夯实大国粮仓</h1>
     <hr> 
     <span id="cls">2023年03月02日 21:50 </span> <a href="https://ehall.xcu.edu.cn/new/index.html" target="_blank">央视网</a>
@@ -39,7 +38,7 @@
 
 
     <!-- 正文 -->
-    <video src=<iframe src="//player.bilibili.com/player.html?aid=302269226&bvid=BV13P411577t&cid=813799618&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> controls width="950px"></video>
+    <iframe src="//player.bilibili.com/player.html?aid=302269226&bvid=BV13P411577t&cid=813799618&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
     <audio src="C:\Users\lenovo\Desktop\前端\资料\day01-HTML-CSS\资料\3. 图片、音频、视频\audio\1.mp3" controls></audio>
     <p><b>央视网消息</b>（焦点访谈）：党的十八大以来，以习近平同志为核心的党中央始终把解决粮食安全问题
     作为治国理政的头等大事，重农抓粮一系列政策举措有力有效，
