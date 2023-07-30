@@ -39,7 +39,7 @@
 
 
     <!-- 正文 -->
-    <video src="C:\Users\lenovo\Desktop\前端\资料\day01-HTML-CSS\资料\3. 图片、音频、视频\video\1.mp4" controls width="950px"></video>
+    <video src="https://ys.mihoyo.com/main/" controls width="950px"></video>
     <audio src="C:\Users\lenovo\Desktop\前端\资料\day01-HTML-CSS\资料\3. 图片、音频、视频\audio\1.mp3" controls></audio>
     <p><b>央视网消息</b>（焦点访谈）：党的十八大以来，以习近平同志为核心的党中央始终把解决粮食安全问题
     作为治国理政的头等大事，重农抓粮一系列政策举措有力有效，
