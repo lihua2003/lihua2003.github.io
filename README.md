@@ -1,1 +1,214 @@
-<>DOCTYPE html>\n\u003Chtml lang=\"zh-CN\">\n\u003Chead>\n    \u003Cmeta charset=\"utf-8\">\n    \u003Ctitle>Html5 - 小猫咪\u003C/title>\n    \u003Clink rel=\"stylesheet\" type=\"text/css\" href=\"css/common/reset.css\"/>\n    \u003Cstyle>\n        body{text-align: center;}\n        .wrapper{ height:800px;}\n        canvas{ margin-top: 123px;}\n    \u003C/style>\n\u003C/head>\n\u003Cbody>\n    \u003Cdiv class=\"wrapper\">\n        \u003Ccanvas width=\"600\" height=\"554\">\u003C/canvas>\n    \u003C/div>\n\n    \u003Cscript>\n        var cvs=document.querySelector(\"canvas\");\n        var g=cvs.getContext(\"2d\");\n        \n        //尾巴\n        g.strokeStyle=\"#33190c\";\n        g.fillStyle=\"#ffffd9\";\n        g.lineWidth=6;\n        g.beginPath();\n          g.moveTo(433,458);\n          g.lineTo(477,438);\n          g.bezierCurveTo(492,433,496,453,484,463);\n          g.lineTo(433,494);\n        g.fill();\n        g.stroke();\n\n        //身体\n        g.beginPath();\n          g.moveTo(255,392);\n          g.lineTo(255,526);\n          g.bezierCurveTo(256,555,282,557,293,530);\n          g.lineTo(383,530);\n          g.bezierCurveTo(392,557,419,558,428,526);\n          g.quadraticCurveTo(434,523,430,393);\n        g.closePath();\n        g.fill();\n        g.stroke();\n        //肚白\n        g.fillStyle=\"#fff\";\n        g.beginPath();\n          g.moveTo(317,501);\n          g.quadraticCurveTo(345,504,363,500);\n          g.quadraticCurveTo(386,492,389,480);\n          g.quadraticCurveTo(393,469,396,437);\n        g.closePath();\n        g.fill();\n        //肚子蓝点\n        g.fillStyle=\"#e5f8ef\";\n        g.beginPath();\n          g.moveTo(428,459);\n          g.bezierCurveTo(407,456,405,479,421,482);\n          g.bezierCurveTo(393,482,394,507,427,511);\n          g.quadraticCurveTo(429,485,428,459);\n        g.closePath();\n        g.fill();\n\n        //耳朵(左边)\n        g.strokeStyle=\"#33190c\";\n        g.fillStyle=\"#ffffd9\";\n        g.lineWidth=4;\n        g.beginPath();\n          g.moveTo(106,79);\n          g.quadraticCurveTo(114,4,209,14);\n        g.fill();\n        g.stroke();\n        //耳朵(右边)\n        g.beginPath();\n          g.lineWidth=5;\n          g.moveTo(376,14);\n          g.quadraticCurveTo(431,13,446,15);\n          g.quadraticCurveTo(488,20,498,48);\n          g.quadraticCurveTo(508,75,512,110);\n        g.fill();\n        g.stroke();\n\n        g.beginPath();\n          g.lineWidth=8;\n          g.moveTo(470,65);\n          g.lineTo(483,27);\n        g.stroke();\n\n        g.beginPath();\n          g.fillStyle=\"#fecce5\";\n          g.moveTo(473,65);\n          g.lineTo(483,30);\n          g.bezierCurveTo(502,46,496,60,512,110);\n        g.closePath();\n        g.fill();\n\n        //头\n        g.lineWidth=10;\n        g.beginPath();\n          g.strokeStyle=\"#33190c\";\n          g.fillStyle=\"#ffffd9\";\n          g.moveTo(280,6);\n          g.bezierCurveTo(476,0,535,154,541,166);\n          g.lineTo(546,180);\n          g.bezierCurveTo(584,304,530,368,432,392);\n          g.quadraticCurveTo(210,460,90,372);\n          g.quadraticCurveTo(38,324,34,314);\n          g.quadraticCurveTo(1,268,38,174);\n          g.quadraticCurveTo(128,8,280,6);\n        g.closePath();\n        g.fill();\n        g.stroke();\n\n        //脸白\n        g.fillStyle=\"#fff\";\n        g.beginPath();\n          g.moveTo(29,294);\n          g.quadraticCurveTo(57,339,99,371);\n          g.quadraticCurveTo(272,404,427,390);\n          g.bezierCurveTo(500,371,567,330,549,216);\n          g.bezierCurveTo(560,298,518,360,427,378);\n          g.quadraticCurveTo(272,404,99,364);\n          g.quadraticCurveTo(55,334,29,294);\n        g.closePath();\n        g.fill();\n\n        //胡须(左边)\n        g.strokeStyle=\"#33190c\";\n        g.lineWidth=7;\n        g.beginPath();\n          g.moveTo(6,212);\n          g.lineTo(23,212);\n          g.stroke();\n          g.moveTo(7,211);\n          g.quadraticCurveTo(5,212,7,213);\n        g.stroke();\n\n        g.beginPath();\n          g.moveTo(2,246);\n          g.lineTo(15,246);\n          g.stroke();\n          g.moveTo(6,245);\n          g.quadraticCurveTo(1,246,6,247);\n        g.stroke();\n\n        g.beginPath();\n          g.moveTo(6,284);\n          g.lineTo(17,281);\n          g.stroke();\n          g.moveTo(9,282);\n          g.quadraticCurveTo(4,287,6,282);\n        g.stroke();\n        //胡须(右边边)\n        g.lineWidth=6;\n        g.beginPath();\n          g.moveTo(529,233);\n          g.lineTo(596,246);\n          g.stroke();\n          g.moveTo(530,233);\n          g.quadraticCurveTo(528,233,530,234);\n          g.stroke();\n          g.moveTo(596,246);\n          g.quadraticCurveTo(597,246,596,246);\n        g.stroke();\n\n        g.beginPath();\n          g.moveTo(525,263);\n          g.lineTo(587,290);\n          g.stroke();\n          g.moveTo(526,263);\n          g.quadraticCurveTo(524,263,527,264);\n          g.stroke();\n          g.moveTo(587,29
+ 
+<head>
+    <meta charset="UTF-8">
+    <title>机器猫</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+ 
+        .whole {
+            width: 800px;
+            margin: 20px auto;
+            /*border: 2px solid yellow;*/
+            background-color: white;
+            position: relative;
+        }
+ 
+        .head {
+            margin: 0 auto;
+            position: relative;
+            width: 500px;
+            height: 440px;
+            background-color: rgb(0, 183, 231);
+            border-radius: 220px;
+            border: 1px solid red;
+        }
+ 
+        .eye .left_eye,
+        .eye .right_eye {
+            width: 100px;
+            height: 130px;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 50px;
+            position: absolute;
+            top: 50px;
+            z-index: 3;
+        }
+ 
+        .eye .LeyeBall,
+        .eye .ReyeBall {
+            width: 20px;
+            height: 20px;
+            background: black;
+            border-radius: 10px;
+            position: absolute;
+            top: 65px;
+        }
+ 
+        .eye .left_eye {
+            left: 146px;
+        }
+ 
+        .eye .right_eye {
+            left: 250px;
+        }
+ 
+        .eye .LeyeBall {
+            right: 10px;
+        }
+ 
+        .eye .ReyeBall {
+            left: 10px;
+        }
+ 
+        .face {
+            position: relative;
+            z-index: 2;
+        }
+ 
+        .face .feature {
+            width: 400px;
+            height: 320px;
+            border-radius: 160px;
+            position: absolute;
+            top: 100px;
+            left: 50px;
+            background: white;
+        }
+ 
+        .face .nose {
+            width: 45px;
+            height: 50px;
+            border-radius: 23px;
+            background-color: rgb(207, 51, 24);
+            border: 2px solid black;
+            position: absolute;
+            top: 165px;
+            left: 225px;
+            z-index: 3;
+        }
+ 
+        .face .Nline {
+            width: 3px;
+            height: 160px;
+            background: black;
+            position: absolute;
+            top: 218px;
+            left: 248px;
+            z-index: 3;
+        }
+ 
+        .face .mouth {
+            width: 280px;
+            height: 280px;
+            border-bottom: 5px solid black;
+            border-radius: 140px;
+            position: absolute;
+            top: 98px;
+            left: 105px;
+        }
+ 
+        .face .mustache .MutR_higher {
+            width: 80px;
+            height: 2px;
+            background: black;
+            position: absolute;
+            top: 220px;
+            left: 295px;
+            z-index: 2;
+        }
+ 
+        .face .mustache .MutR_middle {
+            width: 80px;
+            height: 2px;
+            background: black;
+            position: absolute;
+            top: 240px;
+            left: 295px;
+            z-index: 2;
+        }
+ 
+        .face .mustache .MutR_lower {
+            width: 80px;
+            height: 2px;
+            background: black;
+            position: absolute;
+            top: 260px;
+            left: 295px;
+            z-index: 2;
+        }
+ 
+        .face .mustache .MutL_top {
+            width: 80px;
+            height: 2px;
+            background: black;
+            position: absolute;
+            top: 220px;
+            left: 115px;
+            z-index: 2;
+        }
+ 
+        .face .mustache .MutL_center {
+            width: 80px;
+            height: 2px;
+            background: black;
+            position: absolute;
+            top: 240px;
+            left: 115px;
+            z-index: 2;
+        }
+ 
+        .face .mustache .MutL_bottom {
+            width: 80px;
+            height: 2px;
+            background: black;
+            position: absolute;
+            top: 260px;
+            left: 115px;
+            z-index: 2;
+        }
+ 
+        .face .mustache .MutL_bottom,
+        .face .mustache .MutR_higher {
+            transform: rotate(160deg);
+        }
+ 
+        .face .mustache .MutL_top,
+        .face .mustache .MutR_lower {
+            transform: rotate(200deg);
+        }
+ 
+        .neck {
+            width: 300px;
+            height: 30px;
+            background-color: rgb(163, 31, 18);
+            border: 2px solid black;
+            border-radius: 15px;
+            position: relative;
+            top: 0px;
+            left: 250px;
+            z-index: 4;
+        }
+ 
+        .neck .bell {
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+            border: 2px solid black;
+            border-radius: 60px;
+            background-color: rgb(207, 203, 60);
+            position: absolute;
+            top: 5px;
+            left: 120px;
+        }
+ 
+        .bell .Bline {
+            width: 60px;
+            height: 2px;
+            background-color: rgb(207, 203, 60);
+            border: 2px solid black;
+            border-radius: 3px 3px 0 0;
+            position: absolut
